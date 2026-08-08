@@ -1,7 +1,6 @@
 --[[
-    罗布乐思 固定 GitHub 图片生成器（直链已内置）
+    罗布乐思 固定 GitHub 图片生成器（已修复尺寸和滑块）
     图片：1786207108827.png
-    功能：面前生成图片 → 拖动滑块调节距离 → 一键固定 → 可穿透
 ]]
 
 local Players = game:GetService("Players")
@@ -12,7 +11,7 @@ local player = Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local rootPart = character:WaitForChild("HumanoidRootPart")
 
--- ★ 你的 GitHub raw 图片链接（已修正为正确格式） ★
+-- ★ 你的 GitHub raw 图片链接（请确保浏览器能打开这个地址） ★
 local IMAGE_URL = "https://raw.githubusercontent.com/flippy0825/flippy0825/main/1786207108827.png"
 
 local imagePart = nil
@@ -66,6 +65,8 @@ sliderKnob.Size = UDim2.new(0, 18, 1, 0)
 sliderKnob.BackgroundColor3 = Color3.new(1, 1, 1)
 sliderKnob.Text = ""
 sliderKnob.Parent = sliderFrame
+-- 初始化滑块位置（中间）
+sliderKnob.Position = UDim2.new(0, (sliderFrame.AbsoluteSize.X - 18) / 2, 0, 0)
 
 -- 固定按钮
 local fixBtn = Instance.new("TextButton")
@@ -123,6 +124,7 @@ local function createImagePart(url)
     local surfaceFront = Instance.new("SurfaceGui")
     surfaceFront.Face = Enum.NormalId.Front
     surfaceFront.Adornee = imagePart
+    surfaceFront.Size = UDim2.new(1, 0, 1, 0)   -- ★ 必须设置尺寸，否则看不见 ★
     surfaceFront.Parent = imagePart
 
     local imgFront = Instance.new("ImageLabel")
@@ -136,6 +138,7 @@ local function createImagePart(url)
     local surfaceBack = Instance.new("SurfaceGui")
     surfaceBack.Face = Enum.NormalId.Back
     surfaceBack.Adornee = imagePart
+    surfaceBack.Size = UDim2.new(1, 0, 1, 0)   -- ★ 必须设置尺寸，否则看不见 ★
     surfaceBack.Parent = imagePart
 
     local imgBack = Instance.new("ImageLabel")
