@@ -1,0 +1,270 @@
+local Translations = {
+    ["KronHub"] = "Kron汉化版",
+    ["Theme"] = "主题",
+    ["Home"] = "主页",
+    ["Player"] = "玩家",
+    ["World"] = "环境",
+    ["Wood"] = "树木",
+    ["Auto Buy"] = "自动购买",
+    ["Language"] = "语言",
+    ["Open/Close"] = "打开/关闭",
+    ["Copy"] = "复制",
+    ["Rejoin"] = "重新加入",
+    ["Join"] = "加入",
+    ["Bring"] = "生成",
+    ["Sell"] = "出售",
+    ["Mod Tree"] = "处理木头",
+    ["Start"] = "开始",
+    ["stop"] = "停止",
+    ["Unload"] = "卸载",
+    ["Purchase"] = "购买",
+    ["Load"] = "加载",
+    ["Save"] = "保存",
+    ["Get"] = "获取",
+    ["Teleport"] = "传送",
+    ["Deselect"] = "取消选择",
+    ["Dupe"] = "复制",
+    ["Flip"] = "翻转",
+    ["HomeTab"] = "主页",
+    ["Version - 2.9"] = "版本 - 9.1汉化版",
+    ["Discord"] = "Discord",
+    ["Copy Discord Server"] = "复制Discord服务器",
+    ["Settings"] = "设置",
+    ["Rejoin server"] = "重新加入服务器",
+    ["Join Another Server"] = "加入其他服务器",
+    ["Trees"] = "树木",
+    ["LoneCave: Not Found"] = "幻影：未找到",
+    ["BlueSpruce: Not Found"] = "蓝云杉：未找到",
+    ["Credits"] = "制作人员",
+    ["Owner - .Kron"] = "汉化作者 - 灰",
+    ["Admins - Darkmode, Jandro, Ducrio, Gooser"] = "管理员 - 无名, 蛇千秋",
+    ["Tester - Rhino"] = "二改本汉化版本者全家死光",
+    ["Script version"] = "脚本版本",
+    ["PlayerTab"] = "玩家",
+    ["Movement"] = "移动",
+    ["Walkspeed"] = "行走速度",
+    ["Jumpower"] = "跳跃力",
+    ["Fly Speed"] = "飞行速度",
+    ["Fly Key"] = "飞行按键",
+    ["Fly"] = "飞行",
+    ["Fly UpKey [E]"] = "飞行上升键 [E]",
+    ["Character"] = "角色",
+    ["Sprint"] = "冲刺",
+    ["Noclip"] = "穿墙",
+    ["InfJump"] = "无限跳跃",
+    ["Misc"] = "杂项",
+    ["Btools"] = "建筑工具",
+    ["Hard Dragger"] = "拖拽器",
+    ["WoodTab"] = "木材",
+    ["Tree Option"] = "树木选项",
+    ["Tree Type:Generic"] = "树木类型：普通木",
+    ["Tree Type:Oak"] = "树木类型：橡木",
+    ["Tree Type:Cherry"] = "树木类型：樱花木",
+    ["Tree Type:Fir"] = "树木类型：雪地松",
+    ["Tree Type:Pine"] = "树木类型：松树",
+    ["Tree Type:Birch"] = "树木类型：桦树",
+    ["Tree Type:Walnut"] = "树木类型：巧克力木",
+    ["Tree Type:Koa"] = "树木类型：大巧克力木",
+    ["Tree Type:Volcano"] = "树木类型：火山木",
+    ["Tree Type:GreenSwampy"] = "树木类型：僵尸木",
+    ["Tree Type:GoldSwampy"] = "树木类型：沼泽木",
+    ["Tree Type:Palm"] = "树木类型：椰子树",
+    ["Tree Type:SnowGlow"] = "树木类型：黄金木",
+    ["Tree Type:Frost"] = "树木类型：冰木",
+    ["Tree Type:CaveCrawler"] = "树木类型：蓝木",
+    ["Tree Type:Spooky"] = "树木类型：幽灵木",
+    ["Tree Type:SpookyNeon"] = "树木类型：南瓜木",
+    ["Tree Type:BlueSpruce"] = "树木类型：冷云杉木",
+    ["Tree Type: oneCave"] = "树木类型：幻影木",
+    ["Amount"] = "数量",
+    ["Get Tree"] = "获取树木",
+    ["Logs Option"] = "原木选项",
+    ["Mod Wood"] = "处理树木",
+    ["Bring all Log(s)"] = "获取所有原木",
+    ["Sell all Log(s)"] = "出售所有原木",
+    ["Planks Option"] = "木板选项",
+    ["1x1 cutter"] = "1x1切割器",
+    ["Click sell"] = "点击出售",
+    ["WorldTab"] = "世界",
+    ["Environment"] = "环境",
+    ["Always Day"] = "始终白天",
+    ["Always Night"] = "始终黑夜",
+    ["Remove Fog"] = "移除雾气",
+    ["Shadows"] = "阴影",
+    ["Bridge"] = "桥梁",
+    ["Remove boulders"] = "移除巨石",
+    ["Water"] = "水",
+    ["Walk on water"] = "水上行走",
+    ["Remove water"] = "移除水",
+    ["Long Wire"] = "长电线",
+    ["TeleportTab"] = "传送",
+    ["Locations"] = "位置",
+    ["Location:"] = "位置：",
+    ["Players"] = "玩家",
+    ["Player:"] = "玩家：",
+    ["Teleport to Player"] = "传送到玩家",
+    ["Teleport to Base"] = "传送到基地",
+    ["DupeTab"] = "复制",
+    ["Dupe"] = "复制",
+    ["Your Loaded Slot"] = "已加载存档槽位",
+    ["Slot to load"] = "要加载的存档槽位",
+    ["Dupe Axe"] = "复制斧头",
+    ["Base Dupe"] = "基地复制",
+    ["BaseToSteal:"] = "要复制的基地：",
+    ["BaseToPlace:"] = "要放置的基地：",
+    ["Wires, Blueprints, Structures, Furniture"] = "电线、蓝图、建筑、家具",
+    ["Gifts + Planks"] = "礼物 + 木板",
+    ["Truck Load"] = "卡车装载",
+    ["Truck tp speed"] = "卡车传送速度",
+    ["Start basedrop"] = "开始基地放置",
+    ["ItemTab"] = "物品",
+    ["Items options"] = "物品选项",
+    ["Lasso Tool"] = "套索工具",
+    ["Group selection"] = "群组选择",
+    ["Click selection"] = "点击选择",
+    ["Teleport items"] = "传送物品",
+    ["Deselect all"] = "取消全选",
+    ["Settings"] = "设置",
+    ["Direction:"] = "方向：",
+    ["Deselect after items teleport"] = "物品传送后取消选择",
+    ["Teleport to last position after items teleport"] = "物品传送后传送到上次位置",
+    ["SorterTab"] = "排序",
+    ["Sorter Settings"] = "排序设置",
+    ["Select Player:"] = "选择玩家：",
+    ["Truck Teleport"] = "卡车传送",
+    ["Teleport speed"] = "传送速度",
+    ["Sort Items/Wood"] = "排序物品/木材",
+    ["X"] = "X",
+    ["Y"] = "Y",
+    ["Z"] = "Z",
+    ["Start Sort"] = "开始排序",
+    ["BuildTab"] = "建造",
+    ["AutoBuild"] = "自动建造",
+    ["Player wood to use:"] = "使用的玩家木材：",
+    ["Player base to build:"] = "要建造的基地：",
+    ["BuildMode UI"] = "建造模式",
+    ["Unload Preview"] = "卸载预览",
+    ["AutoBuild Structures"] = "自动建造建筑",
+    ["Start build"] = "开始建造",
+    ["Stop"] = "停止",
+    ["Fill Settings"] = "填充设置",
+    ["Select the fill type for planks:"] = "选择木板填充类型：",
+    ["Options: Click to Fill, Auto Fill"] = "选项：点击填充、自动填充",
+    ["Plank Type:"] = "木板类型：",
+    ["SlotTab"] = "存档槽位",
+    ["Base Option"] = "基地选项",
+    ["Slot"] = "槽位",
+    ["Load Slot"] = "加载槽位",
+    ["Force Save"] = "强制保存",
+    ["Land Option"] = "土地选项",
+    ["Free Land"] = "免费土地",
+    ["Max Land"] = "最大土地",
+    ["Sell Sold Sign"] = "出售已售标志",
+    ["AutoBuyTab"] = "自动购买",
+    ["AutoBuy"] = "自动购买",
+    ["Select Item: BasicHatchet - $12"] = "选择物品：基础斧头 - $12",
+    ["Amount"] = "数量",
+    ["Buy Item"] = "购买物品",
+    ["Special"] = "特殊",
+    ["Buy RukiryAxe - 7,400$"] = "购买Rukiry - 7,400$",
+    ["Buy All Blueprints"] = "购买所有蓝图",
+    ["Others"] = "其他",
+    ["Select service:"] = "选择服务：",
+    ["Buy service"] = "购买服务",
+    ["SettingsTab"] = "设置",
+    ["Settings"] = "设置",
+    ["Toggle UI"] = "切换界面",
+    ["LeftAlt"] = "左Alt键",
+    ["Anti AFK"] = "防挂机",
+    ["TreeFinder"] = "树木查找器",
+    ["Webhook Settings (UI)"] = "Webhook设置（界面）",
+    ["Send webhooks"] = "发送Webhook",
+    ["Settings"] = "设置",
+    ["Stop hopping when found (Loop)"] = "找到后停止跨服（循环）",
+    ["Load KronHub when found"] = "找到后加载脚本",
+    ["Teleport to tree when found"] = "找到后传送到树木",
+    ["Tree Finder"] = "树木查找器",
+    ["Find Tree"] = "查找树木",
+    ["Start"] = "开始",
+    ["Tree Option"] = "树木选项",
+    ["Tree Type: "] = "树木类型：",
+    ["Tree Size: Small"] = "树木大小：小",
+    ["Webhook Option"] = "Webhook选项",
+    ["VehicleTab"] = "载具",
+    ["Vehicle"] = "载具",
+    ["Flip Vehicle"] = "翻转载具",
+    ["Spawner"] = "生成器",
+    ["Select color:"] = "选择颜色：",
+    ["Start spawn"] = "开始生成",
+}
+
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    if Translations[text] then return Translations[text] end
+    for en, cn in pairs(Translations) do
+        if text:find(en) then return text:gsub(en, cn) end
+    end
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        setreadonly(getrawmetatable(game), true)
+    end)
+    if not success then
+        warn("元表劫持失败:", err)
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local tText = translateText(text)
+                            if tText ~= text then gui.Text = tText; translated[gui] = true end
+                        end
+                    end)
+                end
+            end
+            local p = game:GetService("Players").LocalPlayer
+            if p and p.PlayerGui then
+                for _, gui in ipairs(p.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then gui.Text = translateText(text) end
+                        end)
+                    end
+                end
+            end
+        end
+        local function addListener(p)
+            p.DescendantAdded:Connect(function(d)
+                if d:IsA("TextLabel") or d:IsA("TextButton") or d:IsA("TextBox") then
+                    task.wait(0.1); pcall(function() d.Text = translateText(d.Text) end)
+                end
+            end)
+        end
+        pcall(addListener, game:GetService("CoreGui"))
+        local p = game:GetService("Players").LocalPlayer
+        if p and p.PlayerGui then pcall(addListener, p.PlayerGui) end
+        while true do scanAndTranslate(); task.wait(3) end
+    end
+end
+
+task.wait(2)
+setupTranslationEngine()
+
+local s, e = pcall(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DevKron/Kron_Hub/refs/heads/main/version_1.0'))("")
+end)
+if not s then warn("加载失败:", e) end
